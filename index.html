@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>JS HW</title>
+</head>
+
+<body>
+    <main>
+
+
+        <section class="flex flex-col items-center m-40">
+
+
+            <img id="lightImage" class="w-40" src="/l-off.png" alt="">
+            <div class="flex gap-32">
+                <button onclick="document.getElementById('lightImage').src='/l-on.png'"
+                    class="py-2 px-3 hover:bg-yellow-400 bg-yellow-300 text-black rounded-md border font-semibold">Turn
+                    on the light</button>
+                <button onclick="document.getElementById('lightImage').src='/l-off.png'"
+                    class="py-2 px-3 hover:bg-gray-400 bg-gray-300 text-black rounded-md border font-semibold">Turn
+                    off the light</button>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
