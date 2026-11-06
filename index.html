@@ -8,11 +8,11 @@
     <title>JS HW</title>
 </head>
 
-<body id="body">
-    <main>
+<body id="body" class="flex justify-center items-center h-screen">
+    <main class="border rounded-2xl shadow-xl border-gray-300 w-fit">
 
 
-        <section class="flex flex-col gap-4 items-center m-40">
+        <section class="flex flex-col gap-4 items-center m-10">
 
 <h1 class="my-4 text-xl font-bold" id="text">Light off kora asa</h1>
             <img id="lightImage" class="w-40" src="/l-off.png" alt="">
@@ -25,9 +25,9 @@
                     off the light</button>
             </div>
             
- <button onclick="document.getElementById('body').style.backgroundColor='skyblue'"
+ <button onclick="document.getElementById('body').style.backgroundColor='skyblue' ; alert('Background Color Change Kora Hoisa')"
                     class="py-2 px-3 cursor-pointer hover:bg-gray-200 bg-white text-black rounded-md border font-semibold">  Change Background </button>
-                    <button onclick="document.getElementById('body').style.backgroundColor='white'"
+                    <button onclick="document.getElementById('body').style.backgroundColor='white' ; alert('Background Color Restore Kora Hoisa')"
                     class="py-2 px-3 cursor-pointer hover:bg-gray-200 bg-whit text-black rounded-md border font-semibold">  Restore Background </button>
         </section>
 
