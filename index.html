@@ -8,23 +8,27 @@
     <title>JS HW</title>
 </head>
 
-<body>
+<body id="body">
     <main>
 
 
-        <section class="flex flex-col items-center m-40">
+        <section class="flex flex-col gap-4 items-center m-40">
 
-
+<h1 class="my-4 text-xl font-bold" id="text">Light off kora asa</h1>
             <img id="lightImage" class="w-40" src="/l-off.png" alt="">
             <div class="flex gap-32">
-                <button onclick="document.getElementById('lightImage').src='/l-on.png'"
-                    class="py-2 px-3 hover:bg-yellow-400 bg-yellow-300 text-black rounded-md border font-semibold">Turn
+                <button onclick="document.getElementById('lightImage').src='/l-on.png'; document.getElementById('text').innerText='Light on kora hoisa'"
+                    class="py-2 px-3 cursor-pointer hover:bg-yellow-400 bg-yellow-300 text-black rounded-md border font-semibold">Turn
                     on the light</button>
-                <button onclick="document.getElementById('lightImage').src='/l-off.png'"
-                    class="py-2 px-3 hover:bg-gray-400 bg-gray-300 text-black rounded-md border font-semibold">Turn
+                <button onclick="document.getElementById('lightImage').src='/l-off.png' ; document.getElementById('text').innerText='Light off kora hoisa'"
+                    class="py-2 cursor-pointer px-3 hover:bg-gray-400 bg-gray-300 text-black rounded-md border font-semibold">Turn
                     off the light</button>
             </div>
-
+            
+ <button onclick="document.getElementById('body').style.backgroundColor='skyblue'"
+                    class="py-2 px-3 cursor-pointer hover:bg-gray-200 bg-white text-black rounded-md border font-semibold">  Change Background </button>
+                    <button onclick="document.getElementById('body').style.backgroundColor='white'"
+                    class="py-2 px-3 cursor-pointer hover:bg-gray-200 bg-whit text-black rounded-md border font-semibold">  Restore Background </button>
         </section>
 
 
